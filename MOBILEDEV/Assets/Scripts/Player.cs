@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float jumpF = 11f;
 
+
+
     private float xMovement;
 
     private SpriteRenderer sr;
