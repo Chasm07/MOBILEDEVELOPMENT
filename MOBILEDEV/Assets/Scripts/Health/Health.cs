@@ -21,16 +21,16 @@ public class Health : MonoBehaviour
 
         if (currentHealth > 0)
         {
-
+            //iframe
         }
         else
         {
-
+            //anim
         }
     }
-    private void Update()
+   
+    public void AddHealth(float _value)
     {
-        if (Input.GetKeyDown(KeyCode.E))
-            TakeDamage(1);
+        currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
     }
 }
