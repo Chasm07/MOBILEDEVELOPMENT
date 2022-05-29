@@ -123,6 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1001 &893029518
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -880,6 +881,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+=======
+>>>>>>> 8ea72cd64439d71315285f827717db7937f554bf
 --- !u!1 &1124798336
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,3 +966,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2361183812837508048
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 868751061317930700, guid: f7c74088ad4e6ce41807228dbe5b89d0, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 868751061317930700, guid: f7c74088ad4e6ce41807228dbe5b89d0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.8779423
+      objectReference: {fileID: 0}
+    - target: {fileID: 868751061317930700, guid: f7c74088ad4e6ce41807228dbe5b89d0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.048256
+      objectReference: {fileID: 0}
+    - target: {fileID: 868751061317930700, guid: f7c74088ad4e6ce41807228dbe5b89d0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 868751061317930700, guid: f7c74088ad4e6ce41807228dbe5b89d0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 868751061317930700, guid: f7c74088ad4e6ce41807228dbe5b89d0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 868751061317930700, guid: f7c74088ad4e6ce41807228dbe5b89d0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 868751061317930700, guid: f7c74088ad4e6ce41807228dbe5b89d0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 868751061317930700, guid: f7c74088ad4e6ce41807228dbe5b89d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 868751061317930700, guid: f7c74088ad4e6ce41807228dbe5b89d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 868751061317930700, guid: f7c74088ad4e6ce41807228dbe5b89d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2361183813041337165, guid: f7c74088ad4e6ce41807228dbe5b89d0, type: 3}
+      propertyPath: m_Name
+      value: Yshmael
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f7c74088ad4e6ce41807228dbe5b89d0, type: 3}
