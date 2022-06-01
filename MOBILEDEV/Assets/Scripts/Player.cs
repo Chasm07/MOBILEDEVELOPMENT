@@ -39,9 +39,18 @@ public class Player : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
+        
         PlayerMove();
+
+        // flip player
+        float horizontalInput = Input.GetAxis("Horizontal");
+        rd.velocity = new Vector2(horizontalInput * moveF, rd.velocity.y);
+        if (horizontalInput > 0.01f)
+            transform.localScale = Vector3.one;
+        else if (horizontalInput < -0.01f)
+            transform.localScale = new Vector3(-1, 1, 1);
     }
 
     void FixedUpdate()
