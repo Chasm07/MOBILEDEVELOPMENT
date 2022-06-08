@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float jumpF = 11f;
 
-
+    private Animator anim;
 
     private float xMovement;
 
@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rd;
 
-    private bool isGrounded;
+    private bool grounded;
 
     private string check_ground = "Ground";
 
@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
     {
         rd = GetComponent<Rigidbody2D>();
 
-
+        anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
     }
 
@@ -51,6 +51,9 @@ public class Player : MonoBehaviour
             transform.localScale = Vector3.one;
         else if (horizontalInput < -0.01f)
             transform.localScale = new Vector3(-1, 1, 1);
+
+        anim.SetBool("run", horizontalInput != 0);
+        anim.SetBool("grounded", grounded);
     }
 
     void FixedUpdate()
@@ -68,9 +71,10 @@ public class Player : MonoBehaviour
 
     void PlayerJump()
     {
-        if (Input.GetKey(KeyCode.Space) && isGrounded)
+        if (Input.GetKey(KeyCode.Space) && grounded)
         {
-            isGrounded = false;
+            grounded = false;
+            anim.SetTrigger("jump");
             rd.velocity = new Vector2(rd.velocity.x, jumpF);
         }
     }
@@ -79,7 +83,7 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(check_ground))
         {
-            isGrounded = true;
+            grounded = true;
         }
     }
 
