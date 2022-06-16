@@ -5,45 +5,38 @@ using UnityEngine;
 
 public class EnemySideways : MonoBehaviour
 {
-    [SerializeField]
-    private float movementDistance;
 
-    [SerializeField]
-    private float speed;
 
     [SerializeField]
     private float damage;
 
-    private bool movingLeft;
-    private float leftEdge;
-    private float rightEdge;
+
+
+
+
+    [Header("Movement parameters")]
+    [SerializeField] private float speed;
+    private Vector3 initScale;
+
 
     private void Awake()
     {
-        leftEdge = transform.position.x - movementDistance;
-        rightEdge = transform.position.x + movementDistance;
+        initScale = transform.localScale;
     }
 
     private void Update()
     {
-        if (movingLeft)
-        {
-            if (transform.position.x > leftEdge)
-            {
-                transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
-            }
-            else
-                movingLeft = false;
-        }
-        else 
-        {
-            if (transform.position.x < rightEdge)
-            {
-                transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
-            }
-            else
-                movingLeft = true;
-        }
+        MoveInDirection(-1);
+    }
+
+    private void MoveInDirection(int _direction)
+    {
+        transform.localScale = new Vector3(Mathf.Abs(initScale.x) * _direction,
+            initScale.y, initScale.z);
+
+
+        transform.position = new Vector3(transform.position.x + Time.deltaTime * _direction * speed,
+            transform.position.y, transform.position.z);
     }
 
 
@@ -58,5 +51,5 @@ public class EnemySideways : MonoBehaviour
          
 
 
-    }
+    } 
 }
