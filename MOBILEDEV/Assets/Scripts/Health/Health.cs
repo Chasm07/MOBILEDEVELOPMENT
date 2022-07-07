@@ -7,7 +7,12 @@ public class Health : MonoBehaviour
     [SerializeField] 
     private float startingHealth;
 
+    [SerializeField] 
+    private GameManager gameManager;
+
     public float currentHealth { get; private set; }
+
+    private bool dead;
 
     private void Awake()
     {
@@ -25,6 +30,13 @@ public class Health : MonoBehaviour
         }
         else
         {
+
+            if (!dead)
+            {
+                GetComponent<Player>().enabled = false;
+                gameManager.GameOver();
+                dead = true;
+            }
             //anim
         }
     }
