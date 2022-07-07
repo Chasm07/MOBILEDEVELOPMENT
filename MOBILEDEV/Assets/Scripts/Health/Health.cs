@@ -1,18 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
     [SerializeField] 
     private float startingHealth;
 
-    [SerializeField] private GameManager gameManager;
-
     public float currentHealth { get; private set; }
-
-    private bool dead;
 
     private void Awake()
     {
@@ -30,21 +25,10 @@ public class Health : MonoBehaviour
         }
         else
         {
-            if(!dead)
-            {
-                GetComponent<Player>().enabled = false;
-                gameManager.GameOver();
-                dead = true;
-            }
-
+            //anim
         }
-
-
-
     }
-
-
-
+   
     public void AddHealth(float _value)
     {
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
