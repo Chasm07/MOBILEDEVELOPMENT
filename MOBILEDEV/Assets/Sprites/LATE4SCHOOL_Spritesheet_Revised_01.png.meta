@@ -1,7 +1,64 @@
 fileFormatVersion: 2
 guid: 5a0df029a1ce49c43b092c8956f28017
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7213894374307876591
+    second: LATE4SCHOOL_Spritesheet_Revised_01_0
+  - first:
+      213: -6677745538309991438
+    second: LATE4SCHOOL_Spritesheet_Revised_01_1
+  - first:
+      213: 4911018339045419658
+    second: LATE4SCHOOL_Spritesheet_Revised_01_2
+  - first:
+      213: 4336432096366927048
+    second: LATE4SCHOOL_Spritesheet_Revised_01_3
+  - first:
+      213: 3134509835709172794
+    second: LATE4SCHOOL_Spritesheet_Revised_01_4
+  - first:
+      213: 2294840803228401113
+    second: LATE4SCHOOL_Spritesheet_Revised_01_5
+  - first:
+      213: -8935208119578653628
+    second: LATE4SCHOOL_Spritesheet_Revised_01_6
+  - first:
+      213: -6163141104788486594
+    second: LATE4SCHOOL_Spritesheet_Revised_01_7
+  - first:
+      213: -4811974251477451567
+    second: LATE4SCHOOL_Spritesheet_Revised_01_8
+  - first:
+      213: -324307793114723094
+    second: LATE4SCHOOL_Spritesheet_Revised_01_9
+  - first:
+      213: 5286872553521107078
+    second: LATE4SCHOOL_Spritesheet_Revised_01_10
+  - first:
+      213: 1846467173684278205
+    second: LATE4SCHOOL_Spritesheet_Revised_01_11
+  - first:
+      213: 7308194496869907754
+    second: LATE4SCHOOL_Spritesheet_Revised_01_12
+  - first:
+      213: -8284667625424773935
+    second: LATE4SCHOOL_Spritesheet_Revised_01_13
+  - first:
+      213: -1839314553420760928
+    second: LATE4SCHOOL_Spritesheet_Revised_01_14
+  - first:
+      213: -874818273932106230
+    second: LATE4SCHOOL_Spritesheet_Revised_01_15
+  - first:
+      213: 6099685396479254488
+    second: LATE4SCHOOL_Spritesheet_Revised_01_16
+  - first:
+      213: -4990570803780132275
+    second: LATE4SCHOOL_Spritesheet_Revised_01_17
+  - first:
+      213: 488877217098630974
+    second: LATE4SCHOOL_Spritesheet_Revised_01_18
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +98,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +132,432 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: LATE4SCHOOL_Spritesheet_Revised_01_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 425
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111b034994913eb90800000000000000
+      internalID: -7213894374307876591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LATE4SCHOOL_Spritesheet_Revised_01_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 425
+        width: 56
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3559820d1e353a0800000000000000
+      internalID: -6677745538309991438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LATE4SCHOOL_Spritesheet_Revised_01_2
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 408
+        width: 27
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a2b30e821772440800000000000000
+      internalID: 4911018339045419658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LATE4SCHOOL_Spritesheet_Revised_01_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 375
+        width: 300
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc9d88240a1e2c30800000000000000
+      internalID: 4336432096366927048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LATE4SCHOOL_Spritesheet_Revised_01_4
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 158
+        width: 35
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3cc9669614008b20800000000000000
+      internalID: 3134509835709172794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LATE4SCHOOL_Spritesheet_Revised_01_5
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 298
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd308c4d89e8df10800000000000000
+      internalID: 2294840803228401113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LATE4SCHOOL_Spritesheet_Revised_01_6
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 314
+        width: 66
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c04565e83cff380800000000000000
+      internalID: -8935208119578653628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LATE4SCHOOL_Spritesheet_Revised_01_7
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 246
+        width: 122
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e364974a1df187aa0800000000000000
+      internalID: -6163141104788486594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LATE4SCHOOL_Spritesheet_Revised_01_8
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 221
+        width: 116
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc3c58c9ee683db0800000000000000
+      internalID: -4811974251477451567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LATE4SCHOOL_Spritesheet_Revised_01_9
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 215
+        width: 192
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec8189c7c3df7bf0800000000000000
+      internalID: -324307793114723094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LATE4SCHOOL_Spritesheet_Revised_01_10
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 103
+        width: 78
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680536d839ebe5940800000000000000
+      internalID: 5286872553521107078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LATE4SCHOOL_Spritesheet_Revised_01_11
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 99
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3fed88c18ff9910800000000000000
+      internalID: 1846467173684278205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LATE4SCHOOL_Spritesheet_Revised_01_12
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 118
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d3567ac2ceb6560800000000000000
+      internalID: 7308194496869907754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LATE4SCHOOL_Spritesheet_Revised_01_13
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 114
+        width: 82
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc906050b2f60d80800000000000000
+      internalID: -8284667625424773935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LATE4SCHOOL_Spritesheet_Revised_01_14
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 112
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a83625a8217976e0800000000000000
+      internalID: -1839314553420760928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LATE4SCHOOL_Spritesheet_Revised_01_15
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 87
+        width: 134
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06a1433a650cd3f0800000000000000
+      internalID: -874818273932106230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LATE4SCHOOL_Spritesheet_Revised_01_16
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 49
+        width: 83
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df98c2fc8f66a450800000000000000
+      internalID: 6099685396479254488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LATE4SCHOOL_Spritesheet_Revised_01_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 48
+        width: 100
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42ef3e8b4eedbab0800000000000000
+      internalID: -4990570803780132275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LATE4SCHOOL_Spritesheet_Revised_01_18
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 47
+        width: 101
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3702ff1d37d8c600800000000000000
+      internalID: 488877217098630974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
