@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour
 {
@@ -45,7 +46,7 @@ public class Player : MonoBehaviour
         PlayerMove();
 
         // flip player
-        float horizontalInput = Input.GetAxis("Horizontal");
+        float horizontalInput = CrossPlatformInputManager.GetAxis("Horizontal");
         rd.velocity = new Vector2(horizontalInput * moveF, rd.velocity.y);
         if (horizontalInput > 0.01f)
             transform.localScale = Vector3.one;
@@ -63,7 +64,7 @@ public class Player : MonoBehaviour
 
     void PlayerMove()
     {
-        xMovement = Input.GetAxisRaw("Horizontal");
+        xMovement = CrossPlatformInputManager.GetAxis("Horizontal");
         transform.position += new Vector3(xMovement, 0f, 0f) * moveF * Time.deltaTime;
     }
 
@@ -71,7 +72,7 @@ public class Player : MonoBehaviour
 
     void PlayerJump()
     {
-        if (Input.GetKey(KeyCode.Space) && grounded)
+        if (CrossPlatformInputManager.GetButton("Jump") && grounded)
         {
             grounded = false;
             anim.SetTrigger("jump");
