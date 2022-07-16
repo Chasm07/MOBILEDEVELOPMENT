@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 
 namespace UnityStandardAssets.CrossPlatformInput
 {
+
 	public class AxisTouchButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 	{
 		// designed to work in a pair with another axis touch button

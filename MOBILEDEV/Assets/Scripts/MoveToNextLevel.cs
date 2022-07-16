@@ -7,11 +7,13 @@ using UnityEngine.SceneManagement;
 public class MoveToNextLevel : MonoBehaviour
 {
     public int nextSceneLoad;
+    [SerializeField] private AudioClip teleportSound;
 
     // Start is called before the first frame update
     void Start()
     {
         nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 1;
+        SoundManager.instance.PlaySound(teleportSound);
     }
 
     public void OnTriggerEnter2D(Collider2D other)
@@ -30,6 +32,7 @@ public class MoveToNextLevel : MonoBehaviour
             {
                 //Move to next level
                 SceneManager.LoadScene(nextSceneLoad);
+
 
                 //Setting Int for Index
                 if (nextSceneLoad > PlayerPrefs.GetInt("levelAt"))

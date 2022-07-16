@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
     private bool grounded;
 
     private string check_ground = "Ground";
+    [SerializeField] private AudioClip jumpSound;
 
     private void Awake()
     {
@@ -45,6 +46,7 @@ public class Player : MonoBehaviour
 
             PlayerMove();
 
+
             // flip player
             float horizontalInput = CrossPlatformInputManager.GetAxis("Horizontal");
             rd.velocity = new Vector2(horizontalInput * moveF, rd.velocity.y);
@@ -55,6 +57,7 @@ public class Player : MonoBehaviour
 
             anim.SetBool("run", horizontalInput != 0);
             anim.SetBool("grounded", grounded);
+            
     }
 
     void FixedUpdate()
@@ -66,6 +69,7 @@ public class Player : MonoBehaviour
     {
         xMovement = CrossPlatformInputManager.GetAxis("Horizontal");
         transform.position += new Vector3(xMovement, 0f, 0f) * moveF * Time.deltaTime;
+        
     }
 
     
@@ -77,6 +81,7 @@ public class Player : MonoBehaviour
             grounded = false;
             anim.SetTrigger("jump");
             rd.velocity = new Vector2(rd.velocity.x, jumpF);
+            SoundManager.instance.PlaySound(jumpSound);
         }
     }
 

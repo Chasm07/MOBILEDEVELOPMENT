@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 124129866557674792}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 82.45, y: -20.02, z: 16.845066}
   m_LocalScale: {x: 2.8215973, y: 2.8215973, z: 2.8215973}
   m_Children: []
@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthValue: 1
+  healthSound: {fileID: 8300000, guid: 57d23723d241eb346918e227dc70b76d, type: 3}
 --- !u!95 &124129866557674789
 Animator:
   serializedVersion: 3

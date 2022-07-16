@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneLoad: 0
+  teleportSound: {fileID: 8300000, guid: 66d0c65b0afdbc548b854bc596ccdef4, type: 3}
 --- !u!95 &-8839432056223182333
 Animator:
   serializedVersion: 3

@@ -18,10 +18,16 @@ public class Health : MonoBehaviour
     [SerializeField] 
     private float iFramesDuration;
 
+    [SerializeField] private Behaviour[] components;
+
     [SerializeField]
     private float numberOfFlashes;
 
     private SpriteRenderer spriteRend;
+
+    [Header("Death Sound")]
+    [SerializeField] private AudioClip deathSound;
+    [SerializeField] private AudioClip hurtSound;
 
     private void Awake()
     {
@@ -40,16 +46,21 @@ public class Health : MonoBehaviour
             //iframe
             anim.SetTrigger("hurt");
             StartCoroutine(Invulnerability());
+
+            SoundManager.instance.PlaySound(hurtSound);
         }
         else
         {
 
             if (!dead)
             {
-                anim.SetTrigger("die");
+
+                
                 GetComponent<Player>().enabled = false;
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                StartCoroutine(DelayRespawn());
                 dead = true;
+                anim.SetTrigger("die");
+                SoundManager.instance.PlaySound(deathSound);
             }
             //anim
         }
@@ -71,5 +82,14 @@ public class Health : MonoBehaviour
             yield return new WaitForSeconds(1);
         }
         Physics2D.IgnoreLayerCollision(10, 11, false);
+    }
+
+    private IEnumerator DelayRespawn()
+    {
+        yield return new WaitForSeconds(2);
+
+        anim.SetTrigger("die");
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

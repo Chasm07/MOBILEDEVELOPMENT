@@ -8,7 +8,8 @@ public class ScoreScript : MonoBehaviour
 {
 
     public TextMeshProUGUI MyscoreText;
-    private int ScoreNum; 
+    private int ScoreNum;
+    [SerializeField] private AudioClip collectSound;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class ScoreScript : MonoBehaviour
         {
             ScoreNum += 1;
             Destroy(Coin.gameObject);
+            SoundManager.instance.PlaySound(collectSound);
             MyscoreText.text = "" + ScoreNum;
 
         }
@@ -31,6 +33,7 @@ public class ScoreScript : MonoBehaviour
         {
             ScoreNum += 5;
             Destroy(Coin.gameObject);
+            SoundManager.instance.PlaySound(collectSound);
             MyscoreText.text = "" + ScoreNum;
 
         }
