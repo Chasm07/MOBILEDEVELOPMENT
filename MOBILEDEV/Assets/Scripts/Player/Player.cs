@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
 
     private string check_ground = "Ground";
     [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip pickupSound;
 
     private void Awake()
     {
@@ -97,6 +98,7 @@ public class Player : MonoBehaviour
     {
         if(collision.tag == "Powerups")
         {
+            SoundManager.instance.PlaySound(pickupSound);
             Destroy(collision.gameObject);
             jumpF = 35f;
             moveF = 25f;

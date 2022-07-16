@@ -2007,6 +2007,7 @@ GameObject:
   - component: {fileID: 7092751461951761489}
   - component: {fileID: 7092751461951761490}
   - component: {fileID: 2112309982}
+  - component: {fileID: 7404856744885989529}
   m_Layer: 0
   m_Name: Yshmael_FixedRig 1
   m_TagString: Player
@@ -2095,7 +2096,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.82, y: 3.45}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -2138,10 +2139,10 @@ BoxCollider2D:
   m_Offset: {x: 0.86707926, y: 4.044948}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.82, y: 3.45}
+    newSize: {x: 0.82, y: 3.45}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
@@ -2199,8 +2200,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveF: 15
-  jumpF: 21
+  jumpF: 20
   jumpSound: {fileID: 8300000, guid: b7619557af21e2544a4462b6013fc462, type: 3}
+  pickupSound: {fileID: 8300000, guid: 57d23723d241eb346918e227dc70b76d, type: 3}
 --- !u!114 &2112309982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2215,6 +2217,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MyscoreText: {fileID: 0}
   collectSound: {fileID: 8300000, guid: 66507e8b2d0960c4db620b7320651fa1, type: 3}
+--- !u!114 &7404856744885989529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7602086703384892135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d317dcca1d5e4d41b21ebace8148c8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyscoreText: {fileID: 0}
+  collectSound: {fileID: 0}
 --- !u!1 &7657822505254118768
 GameObject:
   m_ObjectHideFlags: 0
