@@ -42,19 +42,19 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        
-        PlayerMove();
 
-        // flip player
-        float horizontalInput = CrossPlatformInputManager.GetAxis("Horizontal");
-        rd.velocity = new Vector2(horizontalInput * moveF, rd.velocity.y);
-        if (horizontalInput > 0.01f)
-            transform.localScale = Vector3.one;
-        else if (horizontalInput < -0.01f)
-            transform.localScale = new Vector3(-1, 1, 1);
+            PlayerMove();
 
-        anim.SetBool("run", horizontalInput != 0);
-        anim.SetBool("grounded", grounded);
+            // flip player
+            float horizontalInput = CrossPlatformInputManager.GetAxis("Horizontal");
+            rd.velocity = new Vector2(horizontalInput * moveF, rd.velocity.y);
+            if (horizontalInput > 0.01f)
+                transform.localScale = Vector3.one;
+            else if (horizontalInput < -0.01f)
+                transform.localScale = new Vector3(-1, 1, 1);
+
+            anim.SetBool("run", horizontalInput != 0);
+            anim.SetBool("grounded", grounded);
     }
 
     void FixedUpdate()
@@ -87,5 +87,24 @@ public class Player : MonoBehaviour
             grounded = true;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Powerups")
+        {
+            Destroy(collision.gameObject);
+            jumpF = 35f;
+            moveF = 25f;
+            StartCoroutine(ResetPower());
+        }
+    }
+
+    private IEnumerator ResetPower()
+    {
+        yield return new WaitForSeconds(5);
+        jumpF = 20;
+        moveF = 15;
+    }
+
 
 }

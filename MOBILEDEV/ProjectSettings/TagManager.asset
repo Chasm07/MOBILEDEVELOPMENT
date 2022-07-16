@@ -9,6 +9,8 @@ TagManager:
   - Coins
   - MyCoin
   - MyPen
+  - NPC
+  - Powerups
   layers:
   - Default
   - TransparentFX

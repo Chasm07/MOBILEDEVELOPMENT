@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -34,7 +35,7 @@ public class Health : MonoBehaviour
             if (!dead)
             {
                 GetComponent<Player>().enabled = false;
-                gameManager.GameOver();
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 dead = true;
             }
             //anim

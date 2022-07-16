@@ -20,7 +20,7 @@ public class Dropdown : MonoBehaviour
         }
         if (val == 2)
         {
-            output.text = "Finish the game under 1 minute";
+            output.text = "Finish the game under 40 seconds";
         }
     }
 }
