@@ -8,6 +8,8 @@ public class MoveToNextLevel : MonoBehaviour
 {
     public int nextSceneLoad;
     [SerializeField] private AudioClip teleportSound;
+    [SerializeField] private GameObject Gameover;
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +27,8 @@ public class MoveToNextLevel : MonoBehaviour
                                                                    build settings */
             {
                 Debug.Log("You Completed ALL Levels");
-
+                Gameover.SetActive(true);
+                PauseTime();
                 //Show Win Screen or Somethin.
             }
             else
@@ -42,4 +45,5 @@ public class MoveToNextLevel : MonoBehaviour
             }
         }
     }
+    public void PauseTime() => Time.timeScale = 0;
 }
