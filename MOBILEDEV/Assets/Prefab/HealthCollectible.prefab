@@ -11,11 +11,10 @@ GameObject:
   - component: {fileID: 124129866557674790}
   - component: {fileID: 124129866557674793}
   - component: {fileID: 124129866557674791}
-  - component: {fileID: 124129866557674788}
   - component: {fileID: 124129866557674789}
   m_Layer: 0
   m_Name: HealthCollectible
-  m_TagString: Untagged
+  m_TagString: Powerups
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 1440418779
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7308194496869907754, guid: 5a0df029a1ce49c43b092c8956f28017, type: 3}
+  m_Sprite: {fileID: -8284667625424773935, guid: 5a0df029a1ce49c43b092c8956f28017, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,7 +101,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.66, y: 0.64}
+    oldSize: {x: 0.82, y: 0.84}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -111,20 +110,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 1.28}
   m_EdgeRadius: 0
---- !u!114 &124129866557674788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 124129866557674792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 661a24ca9e7e53d4ba3d0cd86f9ffe22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthValue: 1
-  healthSound: {fileID: 8300000, guid: 57d23723d241eb346918e227dc70b76d, type: 3}
 --- !u!95 &124129866557674789
 Animator:
   serializedVersion: 3

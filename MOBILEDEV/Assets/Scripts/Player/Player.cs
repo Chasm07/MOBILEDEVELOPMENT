@@ -108,8 +108,8 @@ public class Player : MonoBehaviour
 
     private IEnumerator ResetPower()
     {
-        yield return new WaitForSeconds(5);
-        jumpF = 20;
+        yield return new WaitForSeconds(6);
+        jumpF = 22;
         moveF = 15;
     }
 

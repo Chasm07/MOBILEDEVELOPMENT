@@ -2007,7 +2007,6 @@ GameObject:
   - component: {fileID: 7092751461951761489}
   - component: {fileID: 7092751461951761490}
   - component: {fileID: 2112309982}
-  - component: {fileID: 7404856744885989529}
   m_Layer: 0
   m_Name: Yshmael_FixedRig 1
   m_TagString: Player
@@ -2217,20 +2216,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MyscoreText: {fileID: 0}
   collectSound: {fileID: 8300000, guid: 66507e8b2d0960c4db620b7320651fa1, type: 3}
---- !u!114 &7404856744885989529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7602086703384892135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d317dcca1d5e4d41b21ebace8148c8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MyscoreText: {fileID: 0}
-  collectSound: {fileID: 0}
 --- !u!1 &7657822505254118768
 GameObject:
   m_ObjectHideFlags: 0
