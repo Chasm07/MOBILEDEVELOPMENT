@@ -1698,7 +1698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 040594a218e4b9442ad2e64db46dcb12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: Touch controls to move left/right
+  input: Touch the button left/right to move your character.
   textColor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: 4d05b056864e2624c9ca430ac4d8d169, type: 3}
   delay: 0.04
@@ -21146,11 +21146,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2830418110095013034, guid: d447b6a5e835ad74b831afa2dbd88dbd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.48
+      value: 126.2
       objectReference: {fileID: 0}
     - target: {fileID: 2830418110095013034, guid: d447b6a5e835ad74b831afa2dbd88dbd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.77
+      value: -10.8
       objectReference: {fileID: 0}
     - target: {fileID: 2830418110095013034, guid: d447b6a5e835ad74b831afa2dbd88dbd, type: 3}
       propertyPath: m_LocalPosition.z
